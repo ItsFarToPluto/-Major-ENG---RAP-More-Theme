@@ -1,229 +1,41 @@
+/*Created By YouCannotHide*/
+
 /******************/
 /***ROOM COLOUR***/
 /****************/	
-#chat {
-    background-color: rgba(10, 10, 10, 0.75);
+.icon-room { 
+	width: 75px !important;
 }
-#chat-input{
-    border-radius: 50px;
-}
-#chat .message:nth-child(2n+1),#chat .mention:nth-child(2n+1),#chat .skip:nth-child(2n+1),#chat .moderation:nth-child(2n+1),#chat .emote:nth-child(2n+1),#chat .update:nth-child(2n+1),#chat .welcome:nth-child(2n+1) {
-    background-color: rgba(17, 19, 23, 0.32);
-    -webkit-animation:fadein 0.25s;
-    -moz-animation:fadein 0.25s;
-    -ms-animation:fadein 0.25s;
-    -o-animation:fadein 0.25s;
-    animation:fadein 0.25s;
-}
-#chat .emote, #chat .mention, #chat .message, #chat .moderation, #chat .skip, #chat .system, #chat .update, #chat .welcome {
-    -webkit-animation:fadein 0.25s;
-    -moz-animation:fadein 0.25s;
-    -ms-animation:fadein 0.25s;
-    -o-animation:fadein 0.25s;
-    animation:fadein 0.25s;
-}
-#chat .mention {
-    font-weight: 700;
-    border-left: #7681FF 3px solid;
-}
-#chat .emote .from {
-     color: #ac76ff !important;
-}
-#chat .emote {
-    border-left: rgba(174, 69, 189, 1) 3px solid !important;
-    background-color: rgba(76, 93, 119, 0.22) !important;
-}
-#chat .emote .text {
-    font-style: normal;
+#room-name, #room-host, #now-playing-dj, #now-playing-media {
+    left: 89px !important;
+    color: #fff !important;
     font-weight: bold;
-    color: #ac76ff;
+    text-shadow: 2px 0px 11px, #dd00ff;
 }
-#chat .mention .msg {
-    background: linear-gradient(to right,rgba(255, 118, 118, 0) 0,rgba(0, 98, 225, 0.27) 100%) !important;
-}
-#chat .message:hover, #chat .emote:hover, #chat .update:hover {
-    -moz-transition: 100ms linear 50ms;
-    -o-transition: 100ms linear 50ms;
-    -webkit-transition: 100ms linear 50ms;
-    border-left: #0080FF 3px solid;
-    background: rgba(0, 77, 255, 0.15);
-	padding-left: 3px;
-    text-decoration: none;
-    transition: 100ms linear 50ms;
-}
-#chat .moderation:hover {
-     -moz-transition: 100ms linear 50ms;
-     -o-transition: 100ms linear 50ms;
-     -webkit-transition: 100ms linear 50ms;
-      border-left: #ac76ff 3px solid;
-      padding-left: 3px;
-      text-decoration: none;
-      transition: 100ms linear 50ms;
-}
-.item{
-        -webkit-transition:     all 0.3s ease;
-        -moz-transition:        all 0.3s ease;
-        -o-transition:          all 0.3s ease;
-        transition:             all 0.3s ease;
-}
-.item.community:hover,
-.item.support:hover,
-.item.about:hover,
-.item.api:hover,
-.item.terms:hover,
-.item.privacy:hover{
-    -webkit-box-shadow:     inset 180px 0 0 0 rgba(25, 58, 116, 1) !important;
-    -moz-box-shadow:        inset 225px 0 0 0 rgba(25, 58, 116, 1) !important;
-    -o-box-shadow:          inset 225px 0 0 0 rgba(25, 58, 116, 1) !important;
-    box-shadow:             inset 225px 0 0 0 rgba(25, 58, 116, 1) !important;
-}
-#rcs-unload.rcsunload:hover,
-.logout:hover{
-    -webkit-transition:     all 0.3s ease;
-    -moz-transition:        all 0.3s ease;
-    -o-transition:          all 0.3s ease;
-    transition:             all 0.3s ease;
-    -webkit-box-shadow:     inset 0 0 0 5px rgba(108, 38, 23, 1) !important;
-    -moz-box-shadow:        inset 0 0 0 5px rgba(108, 38, 23, 1) !important;
-    -o-box-shadow:          inset 0 0 0 5px rgba(108, 38, 23, 1) !important;
-    box-shadow:             inset 0 0 0 5px rgba(108, 38, 23, 1) !important;
-}
-#toast-notifications .notification .right:hover {
-   background: rgba(0, 0, 0, 0.35) !important;
-}
-#footer {
-   background-color: rgba(0, 0, 0, 0.50) !important;
-}
-#settings .header {
-   background-color: rgba(28, 31, 37, 0.78) !important;
-}
-#settings {
-   background-color: rgba(10, 10, 10, 0.89) !important;
-}
-#room .app-right,
-#room .app-header{
-   opacity: 0.86 !important;
-}           
-#room .header-panel-bar,
-#header-panel-bar {
-   background: 0.75;
-}
-#room .history-button,
-#history-button {
-   background-color: 0.75;
-}
-#room .plug-menu {
-   background-color: rgba(40, 44, 53, 0.94) !important;
-}
-#room .plug-menu .legal {
-   background-color: rgba(68, 74, 89, 0.46) !important;
-}
-#room .settings {
-   background-color: rgba(10, 10, 10, 0.89) !important;
-}
-#room .settings .header {
-   background-color: rgba(28, 31, 37, 0.78) !important;
-}
-#app-header .left-meta {
-   color: rgba(40, 44, 53, 0.94) !important;
-}
-#user-lists .list.staff .group {
-   background: linear-gradient(to right,rgba(0, 0, 0, 0) 0,rgba(0, 0, 0, 1) 100%) !important;
-}
-#plug-menu {
-   background-color: rgba(40, 44, 53, 0.94) !important;
-}
-#plug-menu .legal {
-   background-color: rgba(68, 74, 89, 0.46) !important;
-}
-#user-rollover {
-   background: rgba(0, 0, 0, 0.56) !important;
-}
-#user-rollover .info{
-    background: rgba(0, 0, 0, 0.18);
-}
-#user-rollover.expand.chat .arrow-down {
-   border-left: 8px solid rgba(0, 0, 0, 0.4) !important;
-}
-#user-rollover .arrow-down {
-   border-top: 8px solid rgba(0, 0, 0, 0.4) !important;
-}
-#room-settings,
-#user-view {
-    background: rgba(0, 0, 0, 0.84) !important;
-}
-#room-settings-menu,
-#user-menu {
-    background: rgba(0, 0, 0, 0.13) !important;
-}
-#user-inventory .cell {
-	background: rgba(28, 31, 37, 0.59) !important;
-}
-#user-inventory .cell:hover {
-	background: rgba(28, 31, 37, 0.80) !important;
-}
-.user-content .grid .cell .top{
-    opacity: 0.6 !important;
-}
-.experience .xp .bar {
-    background: rgba(40, 44, 53, 0.46) !important;
-}
-.experience .xp .bar .progress {
-    background: rgba(219, 0, 0, 0.45) !important;
-}
-#playlist-panel {
+.app-header, #footer-user .info, #dashboard {
     background: rgba(0, 0, 0, 0.7) !important;
 }
-#playlist-menu {
-    background: rgba(0, 0, 0, 0.2)!important;
+#volume .slider {
+    background-color: rgba(0, 0, 0, 0) !important;
+    box-shadow: 0px -19px 0px 6px rgba(0, 0, 0, 0), 0px 18px 0px 6px rgba(0, 0, 0, 0) !important;
 }
-#user-rollover .actions .action{
-box-shadow: inset 1px 1px 0 0 rgba(0, 0, 0, 0.22);
+#rcs-menu {
+background: rgba(0,0,0,0.5) !important;
 }
-#footer-user .info {
-    background: rgba(0, 0, 0, 0.64)!important;
+#footer, .app-right {
+    background: rgba(0, 0, 0, 0.75) !important;
 }
-.back {
-    background: rgba(0, 0, 0, 0.5) !important;
+#playlist-panel, #user-view, #waitlist .list .sortable-placeholder, #room-settings {
+    background: rgba(0, 0, 0, 0.95) !important;
 }
-.back:hover {
-    background: rgba(0, 0, 0, 0.7) !important;
+#now-playing-bar, #history-button, #rs-skip-button, #playlist-menu, #user-menu, #room-settings-menu, .app-right .friends, .badge-box {
+    background: none !important;
 }
-#dashboard .cell {
-   border-radius: 30px;
+#app-menu, #app-menu .list {
+    background:rgba(0, 0, 0, 0.7) !important;
 }
-#dashboard {
-   background-color: rgba(0, 0, 0, 0.85) !important;
-}
-.communities .grid .cell,
-.communities .grid .cell .meta,
-.communities .grid .cell .bar {
-    background: rgba(0, 0, 0, 0.5) !important;
-}
-.communities .grid .cell:hover>.meta {
-    background: rgba(0, 0, 0, 0.41) !important;
-}
-.communities .grid .cell .favorite {
-    background: rgba(105, 105, 105, 0.11) !important;
-}
-.communities .grid .cell .meta .join {
-    border: 1px solid #385790 !important;
-    background: rgba(28, 0, 117, 0.33) !important;
-}
-#dj-button {
-   background-color: rgba(0, 0, 0, 0.35) !important;
-}
-.media-list .selected .actions,
-.media-list .actions {
-    background: rgba(0, 0, 0, 0.52) !important;
-}
-#user-friends .row:hover {
-	background: rgba(0, 0, 0, .36)!important;
-    border-left: #FFFC21 0px solid;
-    border-right: #FAFF44 0px solid;
-    border-radius: 0px;
-    -webkit-transition: 100ms linear 50ms;
-    transition: 100ms linear 50ms
+#room .app-right {
+    background: rgba(0,0,0,0.5) !important;
 }
 .header-panel-button.selected, #footer-user .buttons .button.store:hover, #footer-user .buttons .button:hover, #app-menu .list .logout:hover {
     background: rgba(119, 40, 40, 0.75) !important;
@@ -234,18 +46,243 @@ box-shadow: inset 1px 1px 0 0 rgba(0, 0, 0, 0.22);
 .app-right .friends .list .row.clickable .room, #room-settings .general-settings a, #room-settings .general-settings a:visited {
     color: rgba(119, 40, 40, 0.75)!important;
 }
-#footer-user .buttons .button:hover {
-    background: rgba(0, 0, 0, 0.31);
+.icon-staff {
+    background-position: 35px 520px !important;
 }
-#footer-user .buttons .button.inventory:hover {
-    -webkit-box-shadow: inset 1px 0 0 0 rgba(0, 0, 0, 0.25);
-    -moz-box-shadow: inset 1px 0 0 0 rgba(0, 0, 0, 0.25);
-    box-shadow: inset 1px 0 0 0 rgba(0, 0, 0, 0.25);
+#user-lists .header .button.staff.selected {
+    border-bottom: 1px solid #8c2222 !important;
 }
-#footer-user .buttons .button.store:hover {
-    background: rgba(0, 0, 0, 0.25)
+#chat .emote, #chat .message, #chat .moderation, #chat .skip, #chat .system, #chat .update, #chat .welcome, #chat .cm, #chat .emote:nth-child(2n+1),#chat .message:nth-child(2n+1), #chat .moderation:nth-child(2n+1), #chat .skip:nth-child(2n+1), #chat .system:nth-child(2n+1), #chat .update:nth-child(2n+1), #chat .welcome:nth-child(2n+1), #chat .cm:nth-child(2n+1) {
+    background-color: rgba(0, 0, 0, 0.25) !important;
 }
-#chat-messages .cm.message.fromID-4412452,
-#chat-messages .cm.message.id-4412452{
-	text-shadow: 0 0 10px #0046DD;
+#chat .welcome {
+    color: #226a8c !important;
+}
+#chat .mention, #chat .mention:nth-child(2n+1),  #chat .mention.is-dj, #chat .mention.is-staff, #chat .mention.is-dj:nth-child(2n+1), #chat .mention.is-staff:nth-child(2n+1) {
+    background: linear-gradient(to left, rgba(187, 37, 37, 0.3) 0%,rgba(0,0,0,0.75) 100%) !important;
+    border-left: rgba(119, 40, 40, 0.75) 3px solid !important;
+}
+#user-lists .list .user:hover, #waitlist .list .user {
+	background: linear-gradient(to right, rgba(187, 37, 37, 0.2) 0%,rgba(0,0,0,0) 100%) !important;
+}
+#chat .msg .text .name, #chat .msg .text .name .name {
+    color: #FFF !important;
+}
+.experience .xp .bar .progress, #footer-user .info .bar .progress, .experience .levels .level.earned.avatar .label {
+	background: rgba(187, 37, 37, 1) !important;
+}
+#chat-input {
+	background: rgba(119, 40, 40, 0.75) !important;
+}
+#chat .focused, #room-settings .focused {
+    -webkit-box-shadow: inset 0 0 0 #772828!important;
+    -moz-box-shadow: inset 0 0 0 #772828!important;
+    box-shadow: inset 0 0 0 1px #772828!important;
+} 
+#chat .msg .text .name, #chat .msg .text .name .name {
+    color: #FFF !important;
+}
+#rcs-progress-container .bar {
+    background: #bb2525 !important;
+}
+#user-lists .list.staff .group {
+    border-top: 1px solid rgba(119, 40, 40, 0.75) !important;
+    border-bottom: 1px solid rgba(119, 40, 40, 0.75) !important;
+    background: rgba(119, 40, 40, 0.2) !important;
+}
+#playlist-button, #playlist-menu .menu .row.selected, #playlist-activate-button, #playlist-import:hover, .media-list .row.selected, .tab-menu button.selected, #user-menu .item.selected, #room-settings-menu .item.selected {
+    background: rgba(119, 40, 40, 0.75) !important;
+}
+.icon-check-circle, .icon-check-purple {
+    background-position: -70px -140px !important;
+}
+#playlist-menu .menu .row .count, #playlist-activate-button span {
+color: #FFF !important;
+}
+.icon-next-track {
+    background-position: -70px -175px !important;
+}
+.media-list .selected .actions {
+    background:rgba(119, 40, 40, 1)important;
+}
+#room-bar .icon-grab, .communities .grid .cell .favorite .icon-grab {
+background-position: -40px -280px !important;
+}
+#room-bar .icon-grab, .communities .grid .cell .favorite .icon-grab {
+background-position: -40px -280px !important;
+}
+.communities .grid .cell .bar, .communities .grid .cell .favorite, .communities .grid .cell .meta, .communities .grid .cell .meta .host, .communities .grid .cell {
+background: #000 !important;
+}
+.communities .grid .cell:hover>.meta {
+background: rgba(0, 0, 0, 0.7) !important;
+}
+.communities .grid .cell .meta .join {
+background: rgba(0, 0, 0, 0.7) !important;
+}
+/* Scrollbar */
+::-webkit-scrollbar-thumb {
+    background: rgba(119, 40, 40, 0.75) !important;
+}
+.jspDrag {
+    background: rgba(119, 40, 40, 0.65) !important;
+}
+.jspDrag:hover, .jspTrack .jspActive, .jspTrack .jspHover, .experience .levels .level.earned.avatar .label {
+    background: rgba(119, 40, 40, 0.95) !important;
+}
+/* Scrollbar */
+
+#footer-user .back, #footer-user .signup {
+    background: rgba(119, 40, 40, 0.75) !important;
+    -webkit-box-shadow: inset 0 2px 0 -1px rgba(119, 40, 40, 0.75) !important;
+    -moz-box-shadow: inset 0 2px 0 -1px rgba(119, 40, 40, 0.75) !important;
+    box-shadow: inset 0 2px 0 -1px rgba(119, 40, 40, 0.75) !important;
+}
+#dj-button.is-leave .left, #dj-button.is-quit .left {
+background: #c22e2e !important;
+}
+#dj-button .left {
+background: #bb2525 !important;
+}
+
+/*******************/
+/***STAFF BADGES***/
+/*****************/
+.icon-chat-ambassador + span {
+    color: #FF8C00 !important;
+}
+.icon-chat-host + span {
+    color: #990000 !important;
+}
+.icon-chat-cohost + span {
+    color: #990000 !important;
+}
+.icon-chat-manager + span {
+    color: #ff0000 !important;
+}
+.icon-chat-bouncer + span {
+    color: #f92f2f !important;
+}
+.icon-chat-dj + span {
+    color: #f92f2f !important;
+}
+.icon-chat-ambassador {
+	background: url("http://i65.tinypic.com/16c8i6r.png") !important;
+}
+.icon-chat-host {
+	background: url("http://i68.tinypic.com/2j4rihe.png") !important;
+}
+.icon-chat-cohost {
+	background: url("http://i68.tinypic.com/2j4rihe.png") !important;
+}
+.icon-chat-manager {
+	background: url("https://s29.postimg.org/b8b703kjb/Manager.png") !important;
+}
+.icon-chat-bouncer {
+	background: url("http://i68.tinypic.com/w2j8d3.png") !important;
+}
+.icon-chat-dj {
+	background: url("http://i63.tinypic.com/6hhsb8.png") !important;
+}
+
+/*******************/
+/***NAME EFFECTS***/
+/*****************/
+
+/*Inkzz*/
+.cm.role-dj.id-17287136 .msg .from .un, #user-lists .list .role-dj.id-17287136 .name 
+{
+    color: #FF8F00 !important;
+}
+
+.id-17287136 .msg .from .icon-chat-dj, #user-lists .list.room .user.id-17287136 .icon-chat-dj
+{
+    background: url("https://s28.postimg.org/z3b03vrwd/148500049377344.png") !important;
+    background-size: 12px !important;
+    background-repeat: no-repeat !important;
+    background-position: 3px 1px !important;
+}
+
+/* Inkzz */
+[data-cid^="17287136"].cm .msg .from .un, #user-lists .list .user.role-dj.id-17287136 .name
+{
+        /* Old Color
+        color: rgba(187, 53, 53, 1) !important; 
+        text-shadow: 0px 0px 10px rgba(209, 128, 35, 1);
+        */
+        
+         background-image: url('http://enjin.host/201609161658/themes/core/images/tag_fx/sparkle_orange.gif');
+        background-size: cover;
+        background-position-x: -3px;
+        /*
+        color:rgba(230, 0, 0, 1) !important;
+        text-shadow: 0px 0px 1px #ff8400, 0px 0px 5px #d6a81f, 2px 2px 10px #ff2600 !important;
+        */
+}
+        /*
+        color: rgba(174, 93, 55, 1) !important;
+        text-shadow: 1px 0px 1px #ff0000, 0px 0px 10px #d63d1f, 0px 0px 20px #ff0000 !important;
+        transition: text-shadow 0.5s ease, color 0.5s ease;
+        */
+}
+
+/* YouCannotHide */
+[data-cid^="16138131"].cm .msg .from .un, #user-lists .list .user.role-manager.id-3620521 .name
+{
+        /* Old Color
+        color: rgba(187, 53, 53, 1) !important; 
+        text-shadow: 0px 0px 10px rgba(209, 128, 35, 1);
+        */
+        
+         background-image: url('http://enjin.host/201610141152/themes/core/images/tag_fx/sparkle_red.gif');
+        background-size: cover;
+        background-position-x: -3px;
+        /*
+        color:rgba(230, 0, 0, 1) !important;
+        text-shadow: 0px 0px 1px #ff8400, 0px 0px 5px #d6a81f, 2px 2px 10px #ff2600 !important;
+        */
+}
+       [data-cid^="16138131"].cm .msg .from .un, #user-lists .list.room .user.role-manager.id-16138131 .name {
+        color: rgb(0, 0, 0) !important;
+        text-shadow: 0px 0px 1px #E30000, 0px 0px 5px #FF0000, 2px 2px 10px #E30000 !important;
+}
+}
+
+/* ChillaxedBot */
+[data-cid^="17477245-"] .badge-box .bdg {
+    border-radius: 5px !important;
+    background-image: url("http://i68.tinypic.com/2zohdep.png") !important;
+    background-repeat: round !important;
+    background-size: 30px !important;
+}
+#user-rollover.id-17477245 .badge-box .bdg {
+    border-radius: 5px !important;
+    background-image: url("http://i68.tinypic.com/2zohdep.png") !important;
+    background-repeat: round !important;
+    background-size: 30px !important;
+}
+[data-cid^="17477245-"] .msg .from .un {
+    color: #bb2525 !important;
+}
+[data-cid^="17477245-"] #chat .emote {
+    background: rgba(187, 37, 37, 0.3) !important;
+    border-left: rgba(187, 37, 37,) 3px solid !important;
+}
+#chat-messages .id-17287136 .badge-box
+{
+        border-color: #00a1ff;
+        border-width: 1px;
+        border-style: solid;
+}
+#chat-messages .id-17287136 .badge-box i.bdg
+{
+        /* Old Badge
+        background-image:       url('https://s3.postimg.org/okyfp6sdf/bdg_isle_e02.png');
+        background-size:        cover;
+        */
+        
+        background-image: url('https://s3.postimg.org/okyfp6sdf/bdg_isle_e02.png');
+        background-size: cover;
+        background-color: #404040;
+        background-position-x: -3px;
 }
